@@ -1,10 +1,36 @@
 * {
   font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App {
-  background-image: url("./public/image/background.jpg");
+body {
+  background-image: url("./image/background.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+
+.container-left {
+  position: relative;
+  background-image: url("https://pixabay.com/get/g3ef7c343954173349ed9d718ac7f9b41f5c1b953f593d95c06b135335da0edaa2e8cfe8de30fd9a6d941fb32a7262502efea204cba0f991d4d5e4c72dc2b1a7d_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+  border-radius: 12px;
+}
+
+.container-left p, .container-left img {
+  position: relative;
+  z-index: 2; 
 }
