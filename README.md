@@ -22,7 +22,7 @@ https://bestsvt.github.io/Weather-app
 
 1. Clone the repository to your local machine
 ```sh
-git clone https://github.com/<username>/weather-app-react.git
+git clone git@github.com:bestsvt/Weather-app.git
 ```
 2. Install the dependencies:
 ```sh
